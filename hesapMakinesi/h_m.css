@@ -1,0 +1,114 @@
+.div1{
+background-color: darkgray;
+width: 300px;
+margin: auto;
+border: 4px double white;
+box-shadow: 6px 6px 8px lightslategray;
+border-radius: 15px;
+}
+
+.table1{
+    width: 300px;
+    height: 400px;
+}
+
+.td1{
+    width: 80px;
+    height: 55px;
+    font-size: 20px;
+}
+
+.td2{
+    width: 170px;
+    height: 55px;
+    font-size: 20px;
+}
+.td3{
+    width: 338px;
+    height: 55px;
+    font-size: 20px;
+    border: 2px double black;
+    
+}
+.tdop1{
+    background-color: rgb(75, 72, 72);
+    color: white;
+    transition: all 0.5s ease;
+    text-align: center;
+    border-radius: 50px;
+}
+.tdop2{
+    background-color: orange;
+    color: white;
+    transition: all 0.5s ease;
+    text-align: center;
+    border-radius: 50px;
+}
+.tdnum{
+    background-color: gray;
+    color: white;
+    transition: all 0.5s ease;
+    text-align: center;
+    border-radius: 500px;
+}
+.tdnum:hover{
+    background-color: black;
+    timeline-scope: 0.5s;
+}
+
+.td1.tdop1:hover{
+    background-color: black;
+    timeline-scope: 0.5s; 
+}
+
+.td1.tdop2:hover{
+    background-color: orangered;
+    timeline-scope: 0.5s; 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    transition: backgrount 0.5s ease;
+}
+
+.mode {
+    width: 70px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    transform: scale(1.2);
+    transition: background 0.7s ease;
+}
+.mode_moon{
+    width: 25px;
+    height: 25px;
+    background-image: url(/moon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mode_sun{
+    width: 25px;
+    height: 25px;
+    background-image: url(/sun.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mode_ball{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:white;
+    cursor: pointer;
+    left: 5px;
+}
