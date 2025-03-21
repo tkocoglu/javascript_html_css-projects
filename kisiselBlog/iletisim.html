@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tayyip Koçoğlu'nun blog sayfası">
+  <meta name="keywords" content="Tayyip,Tayyip Koçoğlu,blog sayfa,Tayyip Koçoğlu'nun blog sayfası">
+  <title>Tayyip Koçoğlu'nun blog sayfası</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/profilfoto.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #2d3436;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: #0984e3;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #636e72;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      font-size: 1em;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #0984e3;
+      box-shadow: 0 0 8px rgba(9, 132, 227, 0.2);
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      padding: 15px;
+      background-color: #0984e3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0871c1;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sayfa">
+    <!-- Navbar -->
+    <nav>
+      <a href="/anasayfa.html" class="nav-logo" data-page="home">
+        <div class="profile-icon">
+          <img src="/profilfoto.jpg" alt="Profile">
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="/anasayfa.html" class="nav-link " data-page="home">Anasayfa</a>
+        <a href="/hakkida.html" class="nav-link" data-page="about">Hakkımda</a>
+        <a href="/eğitimlerim.html" class="nav-link" data-page="education">Eğitimlerim</a>
+        <a href="/iletisim.html" class="nav-link active" data-page="contact">İletişim</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/software_world.01?igsh=MndlMXBsa2w4bGNr" target="_blank" class="social-icon">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tkocoglu04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" class="social-icon">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://github.com/tkocoglu" target="_blank" class="social-icon">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a href="https://x.com/TayyipKocoglu04?t=mfWtfTu7gVUN-ITSLLZoUA&s=09" target="_blank" class="social-icon">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+      </div>
+    </nav>
+
+
+    <article id="icerik">
+      <div class="container">
+        <h1>İletişim</h1>
+        <p>Bana ulaşmak için aşağıdaki formu doldurabilir ya da sosyal medya hesaplarımdan iletişime geçebilirsiniz!</p>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Adınız" required>
+          <input type="email" placeholder="E-posta Adresiniz" required>
+          <textarea placeholder="Mesajınız" required></textarea>
+          <button type="submit">Gönder</button>
+        </form>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/software_world.01?igsh=MndlMXBsa2w4bGNr" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tkocoglu04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/tkocoglu" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/TayyipKocoglu04?t=mfWtfTu7gVUN-ITSLLZoUA&s=09" target="_blank"><i
+              class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </article>
+
+    <footer id="altmenu">
+      <p>
+        <a href="/anasayfa.html">Anasayfa</a> |
+        <a href="/hakkida.html">Hakkımda</a> |
+        <a href="/eğitimlerim.html">Eğitimlerim</a> |
+        <a href="/iletisim.html">İletişim</a>
+        <br><br>
+
+        &copy; 2025 Tayyip Koçoğlu
+      </p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

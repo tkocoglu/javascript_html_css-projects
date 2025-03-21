@@ -1,0 +1,206 @@
+/* Navbar */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  width: 1918px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #60a5fa;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-icons a {
+  color: #0984e3;
+  font-size: 1.5em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+  color: #2d3436;
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  nav {
+      width: 100%; /* Küçük ekranlarda tam genişlik */
+      
+  }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ #sayfa{
+    width: 1918;
+    min-height: 980px;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+ }
+
+
+
+
+ 
+ 
+
+ #logo{
+    width: 100px;
+    height: 80px;
+    border-style: none;
+    border-width: 1px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    float: left;
+ }
+
+ #sosyal{
+    width: 180px;
+    height: 40px;
+    border-style: none;
+    border-width: 1px;
+    background-color: white;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 10px;
+ }
+
+ .fa-brands{
+   width: 50px;
+   margin-left: 10px;
+   float: right;
+ }
+ 
+ #icerik{
+   width: 1918px;
+   height: 716px;
+   
+   
+   
+   float: left; 
+ }
+ @media (min-width: 768px) {
+  #icerik {
+      width: 100%; /* Küçük ekranlarda tam genişlik */
+      
+  }
+}
+ 
+ #altmenu{
+   width: 1918px;
+   height: 124px;
+   
+   background-color: rgba(0, 0, 0, 0.2);
+   float: left; 
+   text-align: center;
+   color: darkgrey;
+ }
+ @media (min-width: 768px) {
+  #altmenu {
+      width: 100%; /* Küçük ekranlarda tam genişlik */
+      
+  }
+}
+ #altmenu a{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+   font-weight: bolder;
+   color: gray;
+   padding: 5px;
+   position: relative;
+   
+   text-decoration: none;
+ }
+ #altmenu p{
+  top: 20px;
+   position: relative;
+   font-size: 1.1em;
+        color: #636e72;
+   
+ }
+ #altmenu a:hover{
+   color:aliceblue;
+   text-decoration: underline;
+ }
+
+ #altmenu a:active{
+   color: darkred;
+ }
+
